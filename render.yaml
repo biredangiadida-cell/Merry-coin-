@@ -1,0 +1,8 @@
+services:
+  - type: worker
+    name: merrycoin-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    autoDeploy: true
+    
